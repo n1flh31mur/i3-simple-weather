@@ -16,7 +16,7 @@ You can also change *units* and *temperature unit*.
 ## Settings example
 ```python
 # Settings 
-city = "Stockholm" # Your town 
+city = "Stockholm" # Your city 
 api_key = "0a00a0000a0aa00a0a00aaa000000a00" # Your openweather api key
 units = "metric" # Unit system {imperial or metric}
 temperature_unit = "C" # Units of measurement. That will be showed in UI. Does not affect on API.
