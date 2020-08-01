@@ -17,8 +17,8 @@ icons_list = {
     "02n": "", # Few clouds night.
     "03d": "", # Scattered clouds day.
     "03n": "", # Scattered clouds night.
-    "04d": "", # Broken clouds day.
-    "04n": "", # Broken clouds night.
+    "04d": "", # Broken clouds day.
+    "04n": "", # Broken clouds night.
     "09d": "", # Shower rain day.
     "09n": "", # Shower rain night.
     "10d": "", # Rain day.
@@ -46,7 +46,7 @@ atmophere_icons_list = {
 
 def main():
     # Settings 
-    city = "" # Your town 
+    city = "" # Your city 
     api_key = "" # Your openweather api key
     units = "metric" # Unit system {imperial or metric}
     temperature_unit = "C" # Units of measurement. That will be showed in UI. Does not affect on API.
