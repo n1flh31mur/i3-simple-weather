@@ -13,7 +13,7 @@ Icons that app shows, can be changed. For it, you need to open **weather.py** an
 Also before script run, you have to set up script. Indicating your *api key*, *city* and if you want. 
 You can also change *units* and *temperature unit*.
 
-## Examples of settings 
+## Settings example
 ```python
 # Settings 
 city = "Stockholm" # Your town 
