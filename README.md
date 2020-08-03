@@ -10,7 +10,7 @@ This script make request to [OpenWeather](https://openweathermap.org/) and retur
 
 Icons that app shows, can be changed. For it, you need to open **weather.py** and change *values* in *key-value arrays*.
 
-Also before script run, you have to set up script. Indicating your *api key*, *city* and if you want. 
+Also before script run, you have to set up script. Indicating your *api key*, *city*.
 You can also change *units* and *temperature unit*.
 
 ## Settings example
