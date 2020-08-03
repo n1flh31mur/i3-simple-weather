@@ -10,6 +10,13 @@
 import requests
 import json
 
+# Settings 
+city = "" # Your town 
+api_key = "" # Your openweather api key
+units = "" # Unit system {imperial or metric}
+temperature_unit = "C" # Units of measurement. That will be showed in UI. Does not affect on API.
+
+
 icons_list = {
     "01d": "", # Clear sky day.
     "01n": "", # Clear sky night.
@@ -44,14 +51,9 @@ atmophere_icons_list = {
     781: ""  # Tornado
 }
 
-def main():
-    # Settings 
-    city = "" # Your city 
-    api_key = "" # Your openweather api key
-    units = "metric" # Unit system {imperial or metric}
-    temperature_unit = "C" # Units of measurement. That will be showed in UI. Does not affect on API.
 
-    # Get data
+def main():
+    # Get data from openweather
     url = ('http://api.openweathermap.org/data/2.5/weather?q={}&units={}&appid={}').format(city, units, api_key)
     result = requests.get(url)
 
@@ -77,6 +79,7 @@ def main():
 
     else:
         return "" # Reload icon
+
 
 if __name__ == "__main__":
 	print(main())
