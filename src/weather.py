@@ -53,33 +53,33 @@ atmophere_icons_list = {
 
 
 def main():
-    # Get data from openweather
-    url = ('http://api.openweathermap.org/data/2.5/weather?q={}&units={}&appid={}').format(city, units, api_key)
-    result = requests.get(url)
+    try:
+        # Get data from openweather
+        url = ('http://api.openweathermap.org/data/2.5/weather?q={}&units={}&appid={}').format(city, units, api_key)
+        result = requests.get(url)
 
-    # If result was received
-    if(result.status_code == requests.codes['ok']):        
-        try:
-            # Read json
-            weather = result.json()
+        # If result was received
+        if(result.status_code == requests.codes['ok']):        
+                # Read json
+                weather = result.json()
 
-            # Get info from array 
-            id = int(weather['weather'][0]['id'])
-            group = weather['weather'][0]['main'].capitalize()
-            icon = weather['weather'][0]['icon'].capitalize() 
-            temp = int(float(weather['main']['temp']))
+                # Get info from array 
+                id = int(weather['weather'][0]['id'])
+                group = weather['weather'][0]['main'].capitalize()
+                icon = weather['weather'][0]['icon'].capitalize() 
+                temp = int(float(weather['main']['temp']))
 
-            # Load another icons for Atmosphere group
-            if(group == "Atmosphere"):
-                return atmophere_icons_list[id] + ' {}°{}'.format(temp, temperature_unit)
+                print(icon)
 
-            return icons_list[icon] + ' {}°{}'.format(temp, temperature_unit)
-        except:
-            return "" # Reload icon
+                # Load another icons for Atmosphere group
+                if(group == "Atmosphere"):
+                    return atmophere_icons_list[id] + ' {}°{}'.format(temp, temperature_unit)
 
-    else:
-        return "" # Reload icon
-
+                return icons_list[icon] + ' {}°{}'.format(temp, temperature_unit)
+        else:
+            return "" # Return reload icon
+    except:
+        return "" # Return reload icon
 
 if __name__ == "__main__":
 	print(main())
