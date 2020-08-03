@@ -69,8 +69,6 @@ def main():
                 icon = weather['weather'][0]['icon'].capitalize() 
                 temp = int(float(weather['main']['temp']))
 
-                print(icon)
-
                 # Load another icons for Atmosphere group
                 if(group == "Atmosphere"):
                     return atmophere_icons_list[id] + ' {}°{}'.format(temp, temperature_unit)
