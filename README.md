@@ -1,7 +1,7 @@
 # i3-simple-weather
 Python script for i3bar/polybar and other bars that supports python scripts.
 
-This script make request to ![OpenWeather](https://openweathermap.org/) and returns tempreture and ![Font Awesome Pro](https://fontawesome.com/) icon that shows weather condition.
+This script make request to [OpenWeather](https://openweathermap.org/) and returns tempreture and [Font Awesome Pro](https://fontawesome.com/) icon that shows weather condition.
 
 ## Examples:
 ![Example 1](/screenshots/screenshot-1.png)
