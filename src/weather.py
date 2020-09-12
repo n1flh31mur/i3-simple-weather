@@ -1,5 +1,5 @@
 #    i3-simple-weather  Copyright (C) 2020  BrutalWizard (https://github.com/bru74lw1z4rd).
-#    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+#    This program comes with ABSOLUTELY NO WARRANTY; 
 #    This is free software, and you are welcome to redistribute it
 #    under certain conditions;
 
