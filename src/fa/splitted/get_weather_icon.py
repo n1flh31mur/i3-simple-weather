@@ -1,5 +1,6 @@
-#    i3-simple-weather  Copyright (C) 2020  BrutalWizard (https://github.com/bru74lw1z4rd).
-#    This program comes with ABSOLUTELY NO WARRANTY; 
+
+#    i3-simple-weather  Copyright (C) 2022 BrutalWizard (https://github.com/bru74lw1z4rd).
+#    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
 #    This is free software, and you are welcome to redistribute it
 #    under certain conditions;
 
@@ -13,7 +14,7 @@ import json
 # Settings 
 city = "" # Your town 
 api_key = "" # Your openweather api key
-units = "" # Unit system {imperial or metric}
+units = "metric" # Unit system {imperial or metric}
 temperature_unit = "C" # Units of measurement. That will be showed in UI. Does not affect on API.
 
 
@@ -71,9 +72,9 @@ def main():
 
                 # Load another icons for Atmosphere group
                 if(group == "Atmosphere"):
-                    return atmophere_icons_list[id] + ' {}°{}'.format(temp, temperature_unit)
+                    return atmophere_icons_list[id]
 
-                return icons_list[icon] + ' {}°{}'.format(temp, temperature_unit)
+                return icons_list[icon]
         else:
             return "" # Return reload icon
     except:
